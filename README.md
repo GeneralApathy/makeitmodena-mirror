@@ -63,4 +63,4 @@ Fare successivamente riferimento a [questo script](https://github.com/endoplasmi
 	Anche questo modulo è commentato ed è pronto all'uso su questa repository.
 
 
-Emiliano Maccaferri - 06/02/2018 - https://emilianomaccaferri.com
+Emiliano Maccaferri - 06/02/2018 - https://emilianomaccaferri.com - Per qualsiasi informazione: inbox@emilianomaccaferri.com
