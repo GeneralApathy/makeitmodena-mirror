@@ -1,4 +1,4 @@
-# MakeItModena Mirror.
+# MakeItModena Mirror
 Documentazione del progetto riguardante MagicMirror @ MakeItModena.
 
 ### Premessa:
