@@ -33,10 +33,10 @@ La struttura del modulo è abbastanza semplice, il codice, come già detto, è c
 ### `speech`
 Il modulo fornisce un'implementazione personalizzabile di Google Assistant sulla propria versione di MagicMirror.<br>
 A differenza di `room` questo modulo è più complicato da realizzare, per via dell'integrazione con la GoogleAssistantAPI.<br>
-- *Creazione di un'utenza per l'API*
-	Registrarsi presso [il seguente indirizzo](https://developers.google.com/assistant/sdk/guides/service/python/embed/config-dev-project-and-account) per configurare il proprio account da sviluppatore e successivamente [registrare il proprio device](https://developers.google.com/assistant/sdk/reference/device-registration/register-device-manual), in questo caso, il Raspberry Pi3.
+- *Creazione di un'utenza per l'API*<br>
+	Registrarsi presso [il seguente indirizzo](https://developers.google.com/assistant/sdk/guides/service/python/embed/config-dev-project-and-account) per configurare il proprio account da sviluppatore e successivamente [registrare il proprio device](https://developers.google.com/assistant/sdk/reference/device-registration/register-device-manual), in questo caso, il Raspberry Pi3.<br>
 La creazione dell'account da sviluppatore è molto intuitiva e semplice, per la registrazione del device, invece, qui sotto si potranno trovare piccoli aiuti che faranno risparmiare tempo in caso di difficoltà.
-- *Installazione di un Python Virtual Environment*
+- *Installazione di un Python Virtual Environment*<br>
 Python Virtualenviroment è richiesto per l'installazione dei moduli dell'SDK di GoogleAssistant.
 **N.B**: La versione di Python utilizzata è la *3*.
 	1) Installare `python3-pip`: `sudo apt-get install python3-pip`
@@ -51,7 +51,7 @@ Python Virtualenviroment è richiesto per l'installazione dei moduli dell'SDK di
 	3) Seguire [Define and register a device istance](https://developers.google.com/assistant/sdk/reference/device-registration/register-device-manual#register-instance)	
 	Ottimo! è ora possibile installare il module di Google Assistant:
 	`npm install --save google-assistant`
-- *google-assistant: configurazione e troubleshooting*
+- *google-assistant: configurazione e troubleshooting*<br>
 Il modulo in questione non è molto seguito dalla community di _npm_, pertanto la documentazione sulla sua configurazione scarseggia.
 Installare i seguenti moduli:
 - `npm install --save speaker`
