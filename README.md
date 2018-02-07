@@ -33,7 +33,7 @@ La struttura del modulo è abbastanza semplice, il codice, come già detto, è c
 - *Configurazione del modulo `room`* <br>
 Per configurare il modulo, bisognerà aprire il file `config/config.js`.
 <br>
-La configurazione di default sarà la seguente: <br>
+La configurazione di default sarà la seguente: 
 ```
 username: 'username', // username per mqtt
 password: 'donotsaveinplaintext', // password per mqtt
