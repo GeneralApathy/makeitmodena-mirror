@@ -1,12 +1,14 @@
 const mqtt = require("mqtt");
 const Promise = require("promise")
 
-var MQTT = function(username, password, port, host){
+var MQTT = function(username, password, port, host, temp, hum){
 
   this.username = username;
   this.password = password;
   this.host = host;
   this.port = port;
+  this.temp = temp;
+  this.hum = hum;
 
   this.init = function(){
 
@@ -24,7 +26,9 @@ var MQTT = function(username, password, port, host){
           username: this.username,
           password: this.password,
           port: this.port,
-          host: this.host
+          host: this.host,
+          topic_temperature: this.temp,
+          topic_humidity: this.hum
 
         });
 
@@ -33,8 +37,8 @@ var MQTT = function(username, password, port, host){
           console.log("MQTT client has been created successfully!");
 
           // configurare questi topic
-          client.subscribe("sensore/temperatura");
-          client.subscribe("sensore/umidita");
+          client.subscribe(this.temp);
+          client.subscribe(this.hum);
 
           return resolve(client);
 

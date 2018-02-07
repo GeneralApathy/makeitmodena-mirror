@@ -17,6 +17,8 @@ Module.register("room", {
 		temperature: "Temperatura in stanza: ", // valore di default: label davanti alla temperatura
 		humidity: "Umidità rilevata: ", // valore di default: label davanti all'umidità
 		icons: false // valore di default: se selezionato i due label vengono ignorati e vengono utilizzate le icone
+		topic_temperature: 'sensore/temperatura',
+		topic_humidity: 'sensore/umidita'
 	},
 
 	start: function() {
@@ -27,7 +29,9 @@ Module.register("room", {
 						username: this.config.username,
 						password: this.config.password,
 						port: this.config.port,
-						host: this.config.host
+						host: this.config.host,
+						temp: this.config.topic_temperature,
+						hum: this.config.topic_humidity
 
 					}) /*
 						I moduli comunicano fra di loro (internamente ed esternamente) tramite socket:

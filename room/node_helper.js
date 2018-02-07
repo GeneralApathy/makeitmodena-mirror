@@ -1,8 +1,8 @@
 const NodeHelper = require("node_helper");
 const MQTT = require("./mqttclient");
 
-var data;
-var mqtt;
+var temp;
+var hum;
 
 module.exports = NodeHelper.create({
 
@@ -26,7 +26,9 @@ module.exports = NodeHelper.create({
         payload.username,
         payload.password,
         payload.port,
-        payload.host
+        payload.host,
+        payload.temp,
+        payload.hum
 
       ); // costruttore tramite i parametri passati via socket
       mqtt.init()
@@ -38,14 +40,14 @@ module.exports = NodeHelper.create({
 
             switch(topic){
 
-              case "sensore/umidita":
+              case "" + temp:
 
                 // ovviamente anche node_helper.js può mandare socket all'istanza principale del modulo
                 this.sendSocketNotification('MQTT_DATA_HUMIDITY', message.toString())
 
               break;
 
-              case "sensore/temperatura":
+              case "" + hum:
 
                 this.sendSocketNotification('MQTT_DATA_TEMPERATURE', message.toString())
 
