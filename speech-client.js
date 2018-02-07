@@ -29,7 +29,7 @@ socket.on('google_config', data => {
       lang: data.language,
       deviceModelId: 'xxxxxxx', // deviceModelID ottenuto durante la Device Registration
       deviceId: 'xxxxxx' // id del dispositivo (Device Registration)
-      //textQuery: 'Ciao'// se settata
+      //textQuery: 'Ciao'// se settata viene ignorato l'input audio ed eseguita questa query
     },
 
   }
