@@ -6,7 +6,6 @@ let speakerOpenTime = 0;
 let speakerTimer;
 
 const init = (spkr) => {
-  //console.log(spkr);
   speaker = spkr;
 };
 
