@@ -1,3 +1,8 @@
+/*
+	Modulo scritto da Emiliano Maccaferri
+	Permette l'integrazione di Google Assistant su MagicMirror
+*/
+
 Module.register("speech", {
 
 	defaults: {
