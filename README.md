@@ -46,6 +46,8 @@ fahrenheit: false, // valore di default: visualizzazione celsius
 temperature: "Temperatura in stanza: ", // valore di default: label davanti alla temperatura
 humidity: "Umidità rilevata: ", // valore di default: label davanti all'umidità
 icons: false // valore di default: se selezionato i due label vengono ignorati e vengono utilizzate le icone
+topic_temperature: 'sensore/temperatura', // topic dal quale viene ricavata la temperatura
+topic_humidity: 'sensore/umidita' // topic dal quale viene ricavata l'umidità
 ```
 
 Modificando i valori a piacere (e in base alle esigenze) si potrà configurare correttamente il proprio sensore MQTT, che invierà i dati al modulo `room`.
